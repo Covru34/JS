@@ -50,13 +50,41 @@
     alert(dollars + " USD = " + euros.toFixed(2) + " EUR");
 </script>
 
-<h1>№6</h1>
+<h1>№7</h1>
 <script>
     let gb = Number(prompt("Введіть розмір своєї флешки(ГБ): "));
     let mb = 1024 * gb;
     let fileSize = 820;
     let count   = Math.floor(mb / fileSize);
     alert("На флешку вміститься " + count + " файлів по 820 МБ");
+</script>
+
+<h1>№8</h1>
+<script>
+    let userMoney = Number(prompt("Введіть суму грошей у вашому кармані: "));
+    let price = Number(prompt("Введіть ціну 1 шоколадки: "));
+    let chocled = Math.floor(userMoney / price);
+    let change = userMoney % price;
+    alert("Ви купили " + chocled + " шоколадок");
+    alert("Здача "+ change );
+</script>
+
+<h1>№9</h1>
+<script>
+    let number = Number(prompt("Введіть тризначне ціле число: "));
+    let d1 = Math.floor(number / 100);
+    let d2 = Math.floor(number / 10);
+    let d3 = number % 10;
+    let palindrome = d3 * 100 + d2 * 10 + d1;
+    alert("Паліндром: "+ palindrome);
+</script>
+
+<h1>№10</h1>
+<script>
+    let num = Number(prompt("Введіть ціле число:"));
+    let isEven  = num % 2 === 0;
+    let result  = isEven && "Парне" || "Непарне";
+    alert(num + " — " + result);
 </script>
 </body>
 </html>
